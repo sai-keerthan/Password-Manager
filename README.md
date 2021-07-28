@@ -19,10 +19,10 @@ To Run this Project you require:
  4. IntelliJ IDEA database navigation panel plugin.
 
 HOW TO RUN?
-
-1. After Installing all the above softwares, Open IntelliJ > View > Tool Windows > database browser > then choose connect and give your oracle database's username and password.
-2. After getting connected to oracle database, test a sample query in DATABASE EXECUTION WINDOW from TOOL Windows.
-3. Now run the program with necessary changes and requirements according to your database credentials.
+1.To deploy odbc8.jar file into IDE: IntelliJ IDEA menu > File > Project Structure > Click on + sign > add jar file > Apply and then press ok.
+2. After Installing all the above softwares, Open IntelliJ > View > Tool Windows > database browser > click on greem coloured '+' symbol> choose oracel> give your oracle database's username and password> click on ok.
+3. After getting connected to oracle database, test a sample query in DATABASE EXECUTION WINDOW from TOOL Windows.
+4. Now run the program with necessary changes and requirements according to your database credentials.
 
 THANK YOU.
             
