@@ -31,10 +31,10 @@ public class Main {
         if (mp.verifympwd() == true) {
             try {
                 Class.forName("oracle.jdbc.driver.OracleDriver");
-                Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "yourusername", "yourpassword");
+                Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "keerthan", "dbmslab");
                 System.out.println("CONNECTED SUCCESSFULLY TO THE DATA BASE.");
                 Statement stmt = con.createStatement();
-                ResultSet rs1 = stmt.executeQuery("create table passwordmanager(ID number,website varchar2(300),username varchar2(300),password varchar2(300), CONSTRAINT pkup PRIMARY KEY (password))");
+                //ResultSet rs1 = stmt.executeQuery("create table passwordmanager(ID number,website varchar2(300),username varchar2(300),password varchar2(300), CONSTRAINT pkup PRIMARY KEY (password))");
                 //System.out.println("QUERY EXECUTED!");
                 while (true) {
 
@@ -71,10 +71,10 @@ public class Main {
                             ResultSet result21 = stmt.executeQuery("Select website from passwordmanager");
 
                             while (result21.next()) {
-                                System.out.println(result21.getString(2));
+                                System.out.println(result21.getString(1));
                             }
 
-                            System.out.print("Which Website/App Username and Password You Want:");
+                            System.out.print("Which Website/App credentials you want:");
                             String wb = sc.next();
 
 
@@ -112,7 +112,7 @@ public class Main {
                             ps.setInt(1,ch);
                             ps.executeUpdate();
 
-                          
+                            //ResultSet result42 = stmt.executeQuery("delete from passwordmanager where website='"+ch+ "'");
                             System.out.println(ch+" Deleted Successfully!");
                            break;
                         case 5:
