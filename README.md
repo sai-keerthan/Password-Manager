@@ -1,4 +1,4 @@
-# Password-Manager Lite
+# Password-Manager 
 Developed by: Sai Keerthan Kasula.
 
 =========================================================================================================================
