@@ -34,4 +34,8 @@ THANK YOU.
 
             
 SAMPLE SCREEN SHOTS:
-<img src="https://www.w3schools.com/css/paris.jpg"> </img>
+<img src="https://github.com/sai-keerthan/Password-Manager/blob/main/lib/img/img1.PNG"> </img>
+
+<img src="https://github.com/sai-keerthan/Password-Manager/blob/main/lib/img/img2.PNG"> </img>
+
+<img src="https://github.com/sai-keerthan/Password-Manager/blob/main/lib/img/img%203.PNG"> </img>
