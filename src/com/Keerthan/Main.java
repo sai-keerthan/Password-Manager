@@ -31,10 +31,10 @@ public class Main {
         if (mp.verifympwd() == true) {
             try {
                 Class.forName("oracle.jdbc.driver.OracleDriver");
-                Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "keerthan", "dbmslab");
+                Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "yourusername", "yourpassword");
                 System.out.println("CONNECTED SUCCESSFULLY TO THE DATA BASE.");
                 Statement stmt = con.createStatement();
-                //ResultSet rs1 = stmt.executeQuery("create table passwordmanager(ID number,website varchar2(300),username varchar2(300),password varchar2(300), CONSTRAINT pkup PRIMARY KEY (password))");
+                ResultSet rs1 = stmt.executeQuery("create table passwordmanager(ID number,website varchar2(300),username varchar2(300),password varchar2(300), CONSTRAINT pkup PRIMARY KEY (password))");
                 //System.out.println("QUERY EXECUTED!");
                 while (true) {
 
@@ -112,7 +112,7 @@ public class Main {
                             ps.setInt(1,ch);
                             ps.executeUpdate();
 
-                            //ResultSet result42 = stmt.executeQuery("delete from passwordmanager where website='"+ch+ "'");
+                          
                             System.out.println(ch+" Deleted Successfully!");
                            break;
                         case 5:
