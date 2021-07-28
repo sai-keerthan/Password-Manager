@@ -34,4 +34,4 @@ THANK YOU.
 
             
 SAMPLE SCREEN SHOTS:
-<img src="lib/img/img1"> </img>
+<img src="https://github.com/sai-keerthan/Password-Manager/blob/main/lib/img/img1.PNG"> </img>
