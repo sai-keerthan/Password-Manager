@@ -3,8 +3,7 @@ Developed by: Sai Keerthan Kasula.
 
 =========================================================================================================================
  
-Password Manager is a software that let's you to store a password securely, as forgetting a password is a natural human tendency, this software helps you as an assistant to
-store, display and delete a password for you.
+Password Manager is a software that let's you to store a password securely into database, as forgetting a password is a natural human tendency, this software helps you as an assistant to store, display and delete an unrequired password for you.
 
 TECHNOLOGIES USED : JAVA, Oracle-SQL 11g, JDBC DRIVERS.
 
@@ -22,8 +21,8 @@ To Run this Project you require:
 HOW TO RUN?
 
 1. After Installing all the above softwares, Open IntelliJ > View > Tool Windows > database browser > then choose connect and give your oracle database's username and password.
-2. After getting connected to oracle databse, test a sample query in DATABASE EXECUTION WINDOW from TOOL Windows.
-3. Now run the program with necessary changes and requirements according to the database.
+2. After getting connected to oracle database, test a sample query in DATABASE EXECUTION WINDOW from TOOL Windows.
+3. Now run the program with necessary changes and requirements according to your database credentials.
 
 THANK YOU.
             
