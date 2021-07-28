@@ -31,6 +31,7 @@ HOW TO RUN?
 4. Now run the program with necessary changes and requirements according to your database credentials.
 
 THANK YOU.
+
             
 SAMPLE SCREEN SHOTS:
-
+<img src="https://www.w3schools.com/css/paris.jpg"> </img>
