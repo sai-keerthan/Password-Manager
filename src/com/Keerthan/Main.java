@@ -22,7 +22,7 @@ public class Main {
         String Appname;
         String UserName;
         String Password;
-        int id=0;
+        int id;
         System.out.println("Enter Master Password: ");
         MasterPassword mp = new MasterPassword();
         mp.inputmpwd(sc.next());
@@ -31,8 +31,8 @@ public class Main {
         if (mp.verifympwd() == true) {
             try {
                 Class.forName("oracle.jdbc.driver.OracleDriver");
-                Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "yourusername", "yourpassword");
-                //System.out.println("CONNECTED SUCCESSFULLY TO THE DATA BASE.");
+                Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "keerthan", "dbmslab");
+                System.out.println("CONNECTED SUCCESSFULLY TO THE DATA BASE.");
                 Statement stmt = con.createStatement();
                 //ResultSet rs1 = stmt.executeQuery("create table passwordmanager(ID number,website varchar2(300),username varchar2(300),password varchar2(300), CONSTRAINT pkup PRIMARY KEY (password))");
                 //System.out.println("QUERY EXECUTED!");
@@ -46,14 +46,10 @@ public class Main {
                     System.out.println("Enter your option: ");
                     choice = sc.nextInt();
 
-                    if(choice==1){
-                        id++;
-                    }
-
-
                     switch (choice) {
 
                         case 1:
+                            id=pc.getRandomNumberString();
 
                             System.out.print("Enter the name of the website/application you are using: ");
                             Appname = sc.next();
@@ -75,7 +71,7 @@ public class Main {
                             ResultSet result21 = stmt.executeQuery("Select website from passwordmanager");
 
                             while (result21.next()) {
-                                System.out.println(result21.getString(1));
+                                System.out.println(result21.getString(2));
                             }
 
                             System.out.print("Which Website/App Username and Password You Want:");
@@ -108,16 +104,16 @@ public class Main {
                             }
 
 
-                            System.out.println("\nEnter ID of which password you want to delete: " );
+                            System.out.println("\nEnter the ID of the password you want to delete: " );
                             int ch=sc.nextInt();
                             sc.nextLine();
 
                             PreparedStatement ps = con.prepareStatement("delete from passwordmanager where id=?");
                             ps.setInt(1,ch);
-                            int row=ps.executeUpdate();
+                            ps.executeUpdate();
 
                             //ResultSet result42 = stmt.executeQuery("delete from passwordmanager where website='"+ch+ "'");
-                            System.out.println(row+" Deleted Successfully!");
+                            System.out.println(ch+" Deleted Successfully!");
                            break;
                         case 5:
                             System.out.println("YOU SURE WANT TO EXIT (y/n):\n");

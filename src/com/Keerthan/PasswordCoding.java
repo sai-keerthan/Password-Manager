@@ -3,6 +3,13 @@ import java.util.*;
 
 public class PasswordCoding {
 
+    public int getRandomNumberString() {
+        Random rnd = new Random();
+        int number = rnd.nextInt(9999);
+
+        return number;
+    }
+
    public String getEncodedString(String password){
        return Base64.getEncoder().encodeToString(password.getBytes());
    }
