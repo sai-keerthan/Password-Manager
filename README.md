@@ -9,9 +9,9 @@ store, display and delete a password for you.
 TECHNOLOGIES USED : JAVA, Oracle-SQL 11g, JDBC DRIVERS.
 
 
-Features :  ->Passwords are Encrypted.
-            ->Stores your password in oracle-database.
-            ->Provides a menu to store,retrieve and delete the password.
+Features :  -->Passwords are Encrypted.
+            -->Stores your password in oracle-database.
+            -->Provides a menu to store,retrieve and delete the password.
             
 To Run this Project you require:
  1. IntelliJ IDEA 2021.1.3 (Community Edition) or Latest.https://www.jetbrains.com/idea/download/#section=windows
