@@ -14,17 +14,17 @@ Features :  -->Passwords are Encrypted.
             -->Provides a menu to store,retrieve and delete the password.
             
 To Run this Project you require:
- 
- 1. IntelliJ IDEA 2021.1.3 (Community Edition) or Latest.https://www.jetbrains.com/idea/download/#section=windows
- 2. oracle SQL 11g express edition: https://www.oracle.com/in/database/technologies/oracle-database-software-downloads.html
- 3. Java ODBC drivers : https://www.oracle.com/database/technologies/jdbc-ucp-122-downloads.html
- 4. IntelliJ IDEA database navigation panel plugin.
+ 1. Minimum JAVA JDK version 8 or later. (JAVA JDK 16 is recommended) : https://www.oracle.com/in/java/technologies/javase-downloads.html
+ 2. IntelliJ IDEA 2021.1.3 (Community Edition) or Latest.https://www.jetbrains.com/idea/download/#section=windows
+ 3. oracle SQL 11g express edition: https://www.oracle.com/in/database/technologies/oracle-database-software-downloads.html & finish the setup.
+ 4. Java ODBC drivers : https://www.oracle.com/database/technologies/jdbc-ucp-122-downloads.html
+ 5. IntelliJ IDEA database navigation panel (Install plugin from IDE's plugins menu top right corner under settings icon.)
 
 HOW TO RUN?
 
 1.To deploy odbc8.jar file into IDE: IntelliJ IDEA menu > File > Project Structure > Click on + sign > add jar file > Apply and then press ok.
 
-2. After Installing all the above softwares, Open IntelliJ > View > Tool Windows > database browser > click on greem coloured '+' symbol> choose oracel> give your oracle database's username and password> click on ok.
+2. After Installing all the above softwares, Open IntelliJ > View > Tool Windows > database browser > click on green coloured '+' symbol> choose oracle> give your oracle database's username and password> click on ok.
 
 3. After getting connected to oracle database, test a sample query in DATABASE EXECUTION WINDOW from TOOL Windows.
 
