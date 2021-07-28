@@ -38,4 +38,4 @@ SAMPLE SCREEN SHOTS:
 
 <img src="https://github.com/sai-keerthan/Password-Manager/blob/main/lib/img/img2.PNG"> </img>
 
-<img src="https://github.com/sai-keerthan/Password-Manager/blob/main/lib/img/img3.PNG"> </img>
+<img src="https://github.com/sai-keerthan/Password-Manager/blob/main/lib/img/img%203.PNG"> </img>
