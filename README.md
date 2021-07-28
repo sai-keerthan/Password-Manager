@@ -34,4 +34,4 @@ THANK YOU.
 
             
 SAMPLE SCREEN SHOTS:
-<img src="https://www.w3schools.com/css/paris.jpg"> </img>
+<img src="lib/img/img1"> </img>
