@@ -5,7 +5,7 @@ public class MasterPassword  {
     public boolean status;
 
     public void inputmpwd(String mpwd) {
-        if(mpwd==null){
+        if(mpwd.equals(null)){
             System.out.println("No Password Entered.");
         }
         else{

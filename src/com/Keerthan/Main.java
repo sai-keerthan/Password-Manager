@@ -32,24 +32,25 @@ public class Main {
             try {
                 Class.forName("oracle.jdbc.driver.OracleDriver");
                 Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "keerthan", "dbmslab");
-                System.out.println("CONNECTED SUCCESSFULLY TO THE DATA BASE.");
+                //System.out.println("CONNECTED SUCCESSFULLY TO THE DATA BASE.");
                 Statement stmt = con.createStatement();
                 //ResultSet rs1 = stmt.executeQuery("create table passwordmanager(ID number,website varchar2(300),username varchar2(300),password varchar2(300), CONSTRAINT pkup PRIMARY KEY (password))");
                 //System.out.println("QUERY EXECUTED!");
                 while (true) {
 
                     System.out.println("\n1.Store a new Password");
-                    System.out.println("2.View Selected Passwords.");
-                    System.out.println("3.View All Passwords.");
+                    System.out.println("2.View Selected Passwords");
+                    System.out.println("3.View all Passwords");
                     System.out.println("4.Delete a Password");
-                    System.out.println("5.Exit");
+                    System.out.println("5.Delete all Passwords");
+                    System.out.println("6.Exit");
                     System.out.println("Enter your option: ");
                     choice = sc.nextInt();
 
                     switch (choice) {
 
                         case 1:
-                            id=pc.getRandomNumberString();
+                            id=pc.getRandomNumber();
 
                             System.out.print("Enter the name of the website/application you are using: ");
                             Appname = sc.next();
@@ -112,10 +113,20 @@ public class Main {
                             ps.setInt(1,ch);
                             ps.executeUpdate();
 
-                            //ResultSet result42 = stmt.executeQuery("delete from passwordmanager where website='"+ch+ "'");
                             System.out.println(ch+" Deleted Successfully!");
                            break;
                         case 5:
+                            System.out.println("\n(WARNING !!) Are you sure want to delete all the passwords(type yes/no): ");
+                            String answer = sc.next();
+                            if(answer.equals("yes")){
+                                ResultSet rs5=stmt.executeQuery("delete from passwordmanager");
+                                System.out.println("All the passwords deleted successfully.");
+                            }
+                            else
+                                continue;
+                            break;
+
+                        case 6:
                             System.out.println("YOU SURE WANT TO EXIT (y/n):\n");
                             char c = sc.next().charAt(0);
                             if (c == 'y') {
