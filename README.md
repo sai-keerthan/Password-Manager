@@ -3,7 +3,7 @@ Developed by: Sai Keerthan Kasula.
 
 =========================================================================================================================
  
-Password Manager is a software that let's you to store a password securely into database, as forgetting a password is a natural human tendency, this software helps you as an assistant to store, display and delete an unrequired password for you.
+Password Manager is a CUI-based java program that let's you to store a password securely into database, this program helps you as an assistant to store, display and delete an unrequired password for you.
 
 
 TECHNOLOGIES USED : JAVA, Oracle-SQL 11g, JDBC DRIVERS.
