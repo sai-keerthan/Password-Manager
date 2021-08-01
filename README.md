@@ -1,4 +1,4 @@
-# Password-Manager 
+# Password-Manager (CUI-Based)
 Developed by: Sai Keerthan Kasula.
 
 =========================================================================================================================
